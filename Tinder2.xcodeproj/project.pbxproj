@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36C882126CD815A006219D9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C882026CD815A006219D9 /* UIButton.swift */; };
 		A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */; };
 		A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF826AEF9EF0054E1EE /* SceneDelegate.swift */; };
 		A39D7DFB26AEF9EF0054E1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DFA26AEF9EF0054E1EE /* ViewController.swift */; };
@@ -18,9 +19,12 @@
 		A39D7E1226AF1FC40054E1EE /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1126AF1FC40054E1EE /* UIView.swift */; };
 		A39D7E1426AF22210054E1EE /* UiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1326AF22210054E1EE /* UiLabel.swift */; };
 		A39D7E1726AF27820054E1EE /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1626AF27820054E1EE /* Usuario.swift */; };
+		A39D7E1A26AF4DFD0054E1EE /* UsuarioServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1926AF4DFD0054E1EE /* UsuarioServices.swift */; };
+		A39D7E1C26AF53EE0054E1EE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1B26AF53EE0054E1EE /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A36C882026CD815A006219D9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A39D7DF326AEF9EF0054E1EE /* Tinder2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39D7DF826AEF9EF0054E1EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		A39D7E1126AF1FC40054E1EE /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "../../../Desktop/Codigos prontos em swifit /UIView.swift"; sourceTree = "<group>"; };
 		A39D7E1326AF22210054E1EE /* UiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiLabel.swift; sourceTree = "<group>"; };
 		A39D7E1626AF27820054E1EE /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		A39D7E1926AF4DFD0054E1EE /* UsuarioServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioServices.swift; sourceTree = "<group>"; };
+		A39D7E1B26AF53EE0054E1EE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		A39D7DF526AEF9EF0054E1EE /* Tinder2 */ = {
 			isa = PBXGroup;
 			children = (
+				A39D7E1826AF4DDE0054E1EE /* Services */,
 				A39D7E1526AF27640054E1EE /* Model */,
 				A39D7E1026AF1FA70054E1EE /* Lib */,
 				A39D7E0D26AF1DC00054E1EE /* View */,
@@ -102,6 +109,8 @@
 			children = (
 				A39D7E1126AF1FC40054E1EE /* UIView.swift */,
 				A39D7E1326AF22210054E1EE /* UiLabel.swift */,
+				A39D7E1B26AF53EE0054E1EE /* UIImageView.swift */,
+				A36C882026CD815A006219D9 /* UIButton.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -112,6 +121,14 @@
 				A39D7E1626AF27820054E1EE /* Usuario.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A39D7E1826AF4DDE0054E1EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A39D7E1926AF4DFD0054E1EE /* UsuarioServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +207,9 @@
 				A39D7DFB26AEF9EF0054E1EE /* ViewController.swift in Sources */,
 				A39D7E0F26AF1DE70054E1EE /* CombineCardView.swift in Sources */,
 				A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */,
+				A39D7E1C26AF53EE0054E1EE /* UIImageView.swift in Sources */,
+				A39D7E1A26AF4DFD0054E1EE /* UsuarioServices.swift in Sources */,
+				A36C882126CD815A006219D9 /* UIButton.swift in Sources */,
 				A39D7E1226AF1FC40054E1EE /* UIView.swift in Sources */,
 				A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */,
 			);

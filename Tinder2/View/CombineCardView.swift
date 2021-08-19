@@ -9,18 +9,25 @@ import UIKit
 
 class CombineCardView: UIView {
     
-    let fotoImageview: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "pessoa-1")
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        return imageView
-        
-    }()
+    var usuario: Usuario? {
+        didSet {
+            if let usuario = usuario {
+                fotoImageview.image = UIImage(named: usuario.foto)
+                nomeLabel.text = usuario.nome
+                idadeLabel.text = String(usuario.idade)
+                fraseLabel.text = usuario.frase
+         }
+      } 
+    }
+    
+    let fotoImageview: UIImageView = .fotoImageView()
     
     let nomeLabel: UILabel = .textBoldLabel(32, textColor: .white)
     let idadeLabel: UILabel = .textLabel(28, textColor: .white)
     let fraseLabel: UILabel = .textLabel(18, textColor: .white, numberOfLines: 2)
+    
+    let deslikeImageView: UIImageView = .iconCard(named: "card-deslike")
+    let likeImageView: UIImageView = .iconCard(named: "card-like")
     
     
     override init(frame: CGRect) {
@@ -29,17 +36,31 @@ class CombineCardView: UIView {
         layer.borderWidth = 0.3
         layer.borderColor = UIColor.lightGray.cgColor
         layer.cornerRadius = 8
-        clipsToBounds = true
-        
-        nomeLabel.text = "Ana Laura"
-        idadeLabel.text = "20"
-        fraseLabel.text = "O ultimo a dar match chama"
+        clipsToBounds = true 
         
         nomeLabel.adicionarShadow()
         idadeLabel.adicionarShadow()
         fraseLabel.adicionarShadow()
         
       addSubview(fotoImageview)
+        
+        addSubview(deslikeImageView)
+        deslikeImageView.preencher(
+            top: topAnchor,
+            leading: nil,
+            bottom: nil,
+            trailing: trailingAnchor,
+            padding: .init(top: 20, left: 0, bottom: 0, right: 20)
+            )
+        
+        addSubview(likeImageView)
+        likeImageView.preencher(
+            top: topAnchor,
+            leading: leadingAnchor,
+            bottom: nil,
+            trailing: nil,
+            padding: .init(top: 20, left: 20, bottom: 0, right: 0)
+            )
         
         fotoImageview.preencherSuperview()
         
