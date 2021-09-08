@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A344CA5326E9236E00E253BE /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344CA5226E9236E00E253BE /* Loading.swift */; };
 		A36C882126CD815A006219D9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C882026CD815A006219D9 /* UIButton.swift */; };
 		A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */; };
 		A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF826AEF9EF0054E1EE /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A344CA5226E9236E00E253BE /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		A36C882026CD815A006219D9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A39D7DF326AEF9EF0054E1EE /* Tinder2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A39D7E0E26AF1DE70054E1EE /* CombineCardView.swift */,
+				A344CA5226E9236E00E253BE /* Loading.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				A39D7E1A26AF4DFD0054E1EE /* UsuarioServices.swift in Sources */,
 				A36C882126CD815A006219D9 /* UIButton.swift in Sources */,
 				A39D7E1226AF1FC40054E1EE /* UIView.swift in Sources */,
+				A344CA5326E9236E00E253BE /* Loading.swift in Sources */,
 				A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
