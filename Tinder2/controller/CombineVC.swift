@@ -31,19 +31,29 @@ class CombineVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.systemGroupedBackground
         
-        let loading = Loading(frame: view.frame)
-        view.insertSubview(loading, at: 0)
+      //  let loading = Loading(frame: view.frame)
+      //  view.insertSubview(loading, at: 0)
         
         
         self.adicionarHeader()
         self.adicionarFooter()
-        // self.buscaUsuarios()
+        self.buscaUsuarios()
     }
     
     func buscaUsuarios () {
-        self.usuarios = UsuarioServices.shared.buscaUsuarios()
+      //  self.usuarios = UsuarioServices.shared.buscaUsuarios()
         
-        self.adicionarCards()
+     //   self.adicionarCards()
+        UsuarioServices.shared.buscaUsuarios { (usuarios,err) in
+            if let usuarios = usuarios {
+                
+                DispatchQueue.main.async {
+                    self.usuarios = usuarios
+                    self.adicionarCards()
+                }
+                
+            }
+        }
     }
 }
 
@@ -66,9 +76,9 @@ extension CombineVC {
             padding: .init(top: top, left: 16, bottom: 0, right: 16)
         )
         
-        deslikButton.addTarget(Self.self, action: #selector(deslikeClique), for: .touchUpInside)
-        superlikeButton.addTarget(Self.self, action: #selector(superlikeClique), for: .touchUpInside)
-        likeButton.addTarget(Self.self, action: #selector(likeClique), for: .touchUpInside)
+        deslikButton.addTarget(self, action: #selector(deslikeClique), for: .touchUpInside)
+        superlikeButton.addTarget(self, action: #selector(superlikeClique), for: .touchUpInside)
+        likeButton.addTarget(self, action: #selector(likeClique), for: .touchUpInside)
     }
     
     func adicionarFooter () {
@@ -102,6 +112,12 @@ extension CombineVC {
     func verificarMatch (usuario: Usuario) {
         if usuario.match {
             print("Wooow")
+            
+            let matchVC = MatchVC()
+            matchVC.usuario = usuario
+            matchVC.modalPresentationStyle = .fullScreen
+            
+            self.present(matchVC, animated: true, completion: nil)
         }
     }
     

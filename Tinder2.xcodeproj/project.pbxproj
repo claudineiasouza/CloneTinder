@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A344CA5326E9236E00E253BE /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344CA5226E9236E00E253BE /* Loading.swift */; };
 		A36C882126CD815A006219D9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C882026CD815A006219D9 /* UIButton.swift */; };
 		A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */; };
 		A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF826AEF9EF0054E1EE /* SceneDelegate.swift */; };
@@ -22,6 +21,7 @@
 		A39D7E1726AF27820054E1EE /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1626AF27820054E1EE /* Usuario.swift */; };
 		A39D7E1A26AF4DFD0054E1EE /* UsuarioServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1926AF4DFD0054E1EE /* UsuarioServices.swift */; };
 		A39D7E1C26AF53EE0054E1EE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7E1B26AF53EE0054E1EE /* UIImageView.swift */; };
+		A3F2469F26E93FDC002F8FEB /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2469E26E93FDC002F8FEB /* MatchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +42,7 @@
 		A39D7E1626AF27820054E1EE /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		A39D7E1926AF4DFD0054E1EE /* UsuarioServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioServices.swift; sourceTree = "<group>"; };
 		A39D7E1B26AF53EE0054E1EE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		A3F2469E26E93FDC002F8FEB /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A39D7E0B26AEFA460054E1EE /* CombineVC.swift */,
+				A3F2469E26E93FDC002F8FEB /* MatchVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -214,6 +216,7 @@
 				A39D7E1A26AF4DFD0054E1EE /* UsuarioServices.swift in Sources */,
 				A36C882126CD815A006219D9 /* UIButton.swift in Sources */,
 				A39D7E1226AF1FC40054E1EE /* UIView.swift in Sources */,
+				A3F2469F26E93FDC002F8FEB /* MatchVC.swift in Sources */,
 				A344CA5326E9236E00E253BE /* Loading.swift in Sources */,
 				A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */,
 			);
