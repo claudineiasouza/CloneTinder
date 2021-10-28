@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3404D9C272B10E3004C6D09 /* DetalheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3404D9B272B10E3004C6D09 /* DetalheVC.swift */; };
 		A36C882126CD815A006219D9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36C882026CD815A006219D9 /* UIButton.swift */; };
 		A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF626AEF9EF0054E1EE /* AppDelegate.swift */; };
 		A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39D7DF826AEF9EF0054E1EE /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3404D9B272B10E3004C6D09 /* DetalheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheVC.swift; sourceTree = "<group>"; };
 		A344CA5226E9236E00E253BE /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		A36C882026CD815A006219D9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A39D7DF326AEF9EF0054E1EE /* Tinder2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 			children = (
 				A39D7E0B26AEFA460054E1EE /* CombineVC.swift */,
 				A3F2469E26E93FDC002F8FEB /* MatchVC.swift */,
+				A3404D9B272B10E3004C6D09 /* DetalheVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				A39D7E1726AF27820054E1EE /* Usuario.swift in Sources */,
 				A39D7E0C26AEFA460054E1EE /* CombineVC.swift in Sources */,
 				A39D7E1426AF22210054E1EE /* UiLabel.swift in Sources */,
+				A3404D9C272B10E3004C6D09 /* DetalheVC.swift in Sources */,
 				A39D7DFB26AEF9EF0054E1EE /* ViewController.swift in Sources */,
 				A39D7E0F26AF1DE70054E1EE /* CombineCardView.swift in Sources */,
 				A39D7DF726AEF9EF0054E1EE /* AppDelegate.swift in Sources */,
@@ -217,7 +221,6 @@
 				A36C882126CD815A006219D9 /* UIButton.swift in Sources */,
 				A39D7E1226AF1FC40054E1EE /* UIView.swift in Sources */,
 				A3F2469F26E93FDC002F8FEB /* MatchVC.swift in Sources */,
-				A344CA5326E9236E00E253BE /* Loading.swift in Sources */,
 				A39D7DF926AEF9EF0054E1EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
